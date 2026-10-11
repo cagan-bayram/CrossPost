@@ -1,2 +1,3 @@
 # CrossPost
-A content crossposter for content creators who want to share their existing reels across other social media platforms.
+
+Easily share your videos across multiple platforms with a click of a button.
