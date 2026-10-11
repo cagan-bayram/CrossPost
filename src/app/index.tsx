@@ -2,6 +2,7 @@ import { Text, View, StyleSheet, Button } from "react-native";
 import { useState } from "react";
 import { useVideoPlayer, VideoView } from "expo-video";
 import * as ImagePicker from "expo-image-picker";
+import { supabase } from "@/lib/supabase";
 
 
 export default function Index() {
@@ -26,6 +27,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Button title="Pick a video" onPress={pickVideo} />
+      <Button title="Sign out" onPress={() => supabase.auth.signOut()} />
 
       {video ? (
         <>
